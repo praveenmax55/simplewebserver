@@ -84,8 +84,9 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![output](<Screenshot 2024-03-12 113151.png>) 
-![output](<Screenshot 2024-03-12 112847.png>)
+![Web-Dev Ex-1 1](https://github.com/praveenmax55/simplewebserver/assets/113497509/31d37d9a-cb62-4da9-b5eb-a165764ae2a8)
+![Web-Dev Ex-1 2](https://github.com/praveenmax55/simplewebserver/assets/113497509/90eeb8dc-94a6-41d1-a55b-7c5f7b7f2fc2)
+
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
