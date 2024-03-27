@@ -163,7 +163,7 @@ Testing the webserver.
 
 ## OUTPUT:
 
-![alt text](output.png)
+https://github.com/praveenmax55/simplewebserver/blob/main/Output.png
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
