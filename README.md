@@ -163,7 +163,8 @@ Testing the webserver.
 
 ## OUTPUT:
 
-https://github.com/praveenmax55/simplewebserver/blob/main/Output.png
+![Output](https://github.com/praveenmax55/simplewebserver/assets/113497509/ad7f7bd6-abaa-4177-b4c8-eb2e6106672b)
+
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
