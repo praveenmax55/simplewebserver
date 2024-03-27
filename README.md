@@ -22,70 +22,147 @@ Testing the webserver.
 
 ## PROGRAM:
 ```
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
-<html>
-	<head>
-		<title>
-			SoftWare Companies
-		</title>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+        a {
+            color: red;
+            text-decoration: none;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            border-radius: 20px;
+        }
 
-	</head>
-	<body bgcolor= "skyblue" align="center">
-		
-		<table align="center" border="5" cellspacing="6" cellpadding="5">
-			<caption>Top Five Revenue Generating Software Companies</caption>
-			<tr>
-				<th> S.No </th>
-				<th> Company Name </th>
-				<th> Revenue </th>
-			</tr>
-			<tr>
-				<td> 1 </td>
-				<td> Microsoft </td>
-				<td> $86.8 </td>
-			</tr>
-			<tr>
-				<td> 2 </td>
-				<td> Oracle </td>
-				<td> $67.1 </td>
-			</tr>
-			<tr>
-				<td> 3 </td>
-				<td> SAP </td>
-				<td> $50.9 </td>
-			</tr>
-			<tr>
-				<td> 4 </td>
-				<td> Walmart </td>
-				<td> $49.9</td>
-			</tr>
-			<tr>
-				<td> 5 </td>
-				<td> Google </td>
-				<td> $40.9 </td>
-			</tr>
-			</table>
-	</body>
+        a:hover {
+            color: grey;
+            background-color: rgb(141, 165, 204);
+        }
 
+        .row1 {
+            background-color: gainsboro;
+            display: flex;
+            height: 50px;
+            place-items: center;
+        }
+
+        i:hover {
+            color: white;
+        }
+        .searchtext{
+            outline: none;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="row1">
+                <div style="width: 40%;">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-youtube"></i></a>
+                    <a href=""><i class="bi bi-pinterest"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+
+                <div style="width: 40%;">
+                <a href="">Alumni</a><i class="bi bi-three-dots-vertical"></i>
+                <a href="">Events</a><i class="bi bi-three-dots-vertical"></i>
+                <a href="">Career</a><i class="bi bi-three-dots-vertical"></i>
+                <a href="">Login</a><i class="bi bi-three-dots-vertical"></i>
+                <a href="">sports</a><i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <div style="width: 20%;">
+                    <div style="border: 3px solid;border-radius: 20px; ">
+                        <i class="bi bi-search"></i>
+                        <input type="text" style="height: 40px;background-color: gainsboro ; border: 0px" placeholder="Search"  class="searchtext"/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!--row 1-->
+                <div style="display:flex">
+                    <!--row 1-->
+                    <div style="width:30%">
+                        <img src="logo (1).png" alt="" style="width:100%">
+                    </div>
+                    <!--row 1- column 2-->
+                    <div style="width: 70; text-align: center;" class="p-3 border-3 border-secondary" >
+        
+        
+                        <a href="">home</a>
+                        <a href="">About us</a>
+                        <a href="">Department</a>
+                        <a href="">life at sec</a>
+                        <a href="">admission</a>
+                        <a href="">placement</a>
+                        <a href="">Research</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div style="display:flex;">
+                <div>
+                    <div>
+                        <div class="card" style="width: 18rem; height:350px">
+                            <div class="card-body" Style="background-color:maroon ; color: white;text-align: center;">
+                                <h5 class="card-title">ADMISSION ENQUIRY</h5>
+        
+                                <a href="" class="btn btn-primary"
+                                    style="background-color: aliceblue; color:brown">APLLY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card" style="width: 18rem;height: 350px;">
+                            <div class="card-body" Style="background-color:maroon ; color: white;text-align: center;">
+                                <h5 class="card-title">chat with studentnAmbasaador</h5>
+        
+                                <a href="" class="btn btn-primary"
+                                    style="background-color: aliceblue; color:brown">KNOW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="WD 1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="WD3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="WD 3.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            
+        </body>
 </html>
-"""
-class myhandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("request received")
-        self.send_response(200)
-        self.send_header('content-type', 'text/html; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-server_address = ('',8000)
-httpd = HTTPServer(server_address,myhandler)
-print("my webserver is running...")
-httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![Web-Dev Ex-1 1](https://github.com/praveenmax55/simplewebserver/assets/113497509/31d37d9a-cb62-4da9-b5eb-a165764ae2a8)
-![Web-Dev Ex-1 2](https://github.com/praveenmax55/simplewebserver/assets/113497509/90eeb8dc-94a6-41d1-a55b-7c5f7b7f2fc2)
+
 
 
 ## RESULT:
