@@ -163,7 +163,7 @@ Testing the webserver.
 
 ## OUTPUT:
 
-
+![alt text](output.png)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
